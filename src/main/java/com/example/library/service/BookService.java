@@ -27,7 +27,7 @@ public class BookService {
         return repository.save(book);
     }
 
-    public Book update(Long id, Book updated) {
+    public Book update(long id, Book updated) {
         Book existing = repository.findById(id).orElse(null);
 
         if (existing == null) {
